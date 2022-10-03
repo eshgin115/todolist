@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+#box{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    cursor: move;
+}
+#droparea{
+    width: 80%;
+    height: 200px;
+    margin: 50px auto;
+    border: 3px solid red;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#dragarea{
+    width: 80%;
+    height: 200px;
+    margin: 50px auto;
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  
+}
+.item{
+    width: 23%;
+    height: 100px;
+    background: red;
+    cursor: move;
+}
+#droparea i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    animation: icon 1s linear infinite;
+    opacity: 0;
+}
+
+@keyframes icon{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
